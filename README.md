@@ -94,7 +94,7 @@ npm start
 
 This will start the Expo development server and open the app in Expo Go on your device or simulator.
 
-### Integration Issue with React Native and .NET Core API Backend
+# Integration Issue with React Native and .NET Core API Backend
 
 #### Problem Description:
 Encountering difficulties during the integration process between a React Native front end and a .NET Core API backend. Despite attempts to establish connection by adjusting HTTP ports, modifying CORS policies, and even switching emulators, the React Native application running on the emulator fails to connect to the server.
