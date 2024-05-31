@@ -92,7 +92,7 @@ npm install
 # Run the app:
 npm start
 
-# This will start the Expo development server and open the app in Expo Go on your device or simulator.
+This will start the Expo development server and open the app in Expo Go on your device or simulator.
 
 ### Integration Issue with React Native and .NET Core API Backend
 
