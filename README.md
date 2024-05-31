@@ -9,6 +9,8 @@ Task Collector is a mobile application built with React Native and Expo Go that 
 - [Custom Hooks](#custom-hooks)
 - [Dependencies](#dependencies)
 - [Scripts](#scripts)
+- [Integration Issue with React Native and .NET Core API Backend](#Integration-Issue-with-React-Native-and-.NET-Core-API-Backend)
+
 
 ## Overview
 
@@ -81,20 +83,26 @@ The following scripts are available for running various tasks:
 
 To get started with Task Collector, follow these steps:
 # Clone the repository:
+```bash
 git clone https://github.com/your-username/task-collector.git
-
+```
 # Navigate to the project directory:
+```bash
 cd task-collector
+```
 
 # Install dependencies:
+```bash
 npm install
-
+```
 # Run the app:
+```bash
 npm start
+```
 
 This will start the Expo development server and open the app in Expo Go on your device or simulator.
 
-# Integration Issue with React Native and .NET Core API Backend
+## Integration Issue with React Native and .NET Core API Backend
 
 #### Problem Description:
 Encountering difficulties during the integration process between a React Native front end and a .NET Core API backend. Despite attempts to establish connection by adjusting HTTP ports, modifying CORS policies, and even switching emulators, the React Native application running on the emulator fails to connect to the server.
