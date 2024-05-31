@@ -80,29 +80,20 @@ The following scripts are available for running various tasks:
 ## Getting Started
 
 To get started with Task Collector, follow these steps:
-
-1. Clone the repository:
-
-```bash
+# Clone the repository:
 git clone https://github.com/your-username/task-collector.git
-Navigate to the project directory:
-bash
-Copy code
+
+# Navigate to the project directory:
 cd task-collector
-Install dependencies:
-bash
-Copy code
+
+# Install dependencies:
 npm install
-Run the app:
-bash
-Copy code
+
+# Run the app:
 npm start
-This will start the Expo development server and open the app in Expo Go on your device or simulator.
 
-License
+# This will start the Expo development server and open the app in Expo Go on your device or simulator.
+
+## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-vbnet
-Copy code
-
-This README.md provides a comprehensive overview of the Task Collector app, including its structure, custom hooks, dependencies, scripts, and instructions for getting started. Feel free to customize it further based on your specific needs and preferences.
