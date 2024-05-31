@@ -17,25 +17,16 @@ export type FetchConfig = AxiosRequestConfig;
 const instance = axios.create({
   timeout: 1000 * 60 * 5, // 5 minutes
 });
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 export const fetch = <T>(params: FetchConfig): AxiosPromise<T> => {
-  // const baseURL = "http://10.0.2.2:3000/";
-  const baseURL = "https://10.0.2.2:5602/";
+  const baseURL = "http://10.0.2.2:3000/";
+  // const baseURL = "https://10.0.2.2:5602/";
 
   instance.defaults.baseURL = baseURL;
   instance.defaults.headers.common["Referrer-Policy"] = "no-referrer";
 
   return instance(params);
 };
-
-// const logEndpoint = (config: AxiosRequestConfig) => {
-//   const finalUrl = config.baseURL ? config.baseURL + config.url : config.url;
-//   console.log("Calling endpoint:", finalUrl); // Log the final URL
-//   return config;
-// };
-
-// instance.interceptors.request.use(logEndpoint);
 
 export default function useFetch<TResponse = unknown, TArgs = unknown>(
   fn: (args?: TArgs) => FetchConfig
