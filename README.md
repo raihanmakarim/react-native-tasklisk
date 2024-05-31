@@ -94,6 +94,27 @@ npm start
 
 # This will start the Expo development server and open the app in Expo Go on your device or simulator.
 
+### Integration Issue with React Native and .NET Core API Backend
+
+#### Problem Description:
+Encountering difficulties during the integration process between a React Native front end and a .NET Core API backend. Despite attempts to establish connection by adjusting HTTP ports, modifying CORS policies, and even switching emulators, the React Native application running on the emulator fails to connect to the server.
+
+#### Attempted Solutions:
+1. **Port Adjustment**: Experimented with switching to different HTTP ports to facilitate connection between the React Native application and the backend API.
+2. **CORS Policy Modification**: Edited the CORS (Cross-Origin Resource Sharing) policy to potentially allow the React Native front end to communicate with the .NET Core backend.
+3. **Emulator Switching**: Tried utilizing different emulators in the hope of resolving the connectivity issue.
+
+#### Current Approach:
+In response to the persistent integration problem, a temporary workaround has been implemented by creating a `server.js` file to manage the backend operations. This interim solution aims to establish a functional backend system independently from the React Native frontend, thereby allowing for continued development and troubleshooting without hindrance.
+
+#### Next Steps:
+- Continue investigating and debugging the integration issue between the React Native frontend and the .NET Core API backend.
+- Explore alternative methods or configurations to enable successful communication between the frontend and backend components.
+- Document any findings, solutions, or workarounds to aid in future development and troubleshooting efforts.
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+
