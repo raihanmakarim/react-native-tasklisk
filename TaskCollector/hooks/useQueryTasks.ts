@@ -11,7 +11,7 @@ export type TasksResponse = {
 const useQueryTasks = () => {
   const fetch = useFetch<TasksResponse[]>(() => ({
     method: "GET",
-    url: "/api/tasks",
+    url: "/tasks",
   }));
 
   return useQuery(["tasks"], fetch, {
