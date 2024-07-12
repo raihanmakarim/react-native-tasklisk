@@ -19,8 +19,8 @@ const instance = axios.create({
 });
 
 export const fetch = <T>(params: FetchConfig): AxiosPromise<T> => {
-  const baseURL = "http://10.0.2.2:3000/";
-  // const baseURL = "https://10.0.2.2:5602/";
+  // const baseURL = "http://10.0.2.2:3000/";
+  const baseURL = "https://localhostq3:5602/";
 
   instance.defaults.baseURL = baseURL;
   instance.defaults.headers.common["Referrer-Policy"] = "no-referrer";
